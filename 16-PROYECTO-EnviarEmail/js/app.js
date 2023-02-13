@@ -62,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function(){
             comprobarEmail();
             return;
         }
+
+        limpiarAlerta(e.target.parentElement);
         
         if(e.target.id === 'email' && !validarEmail(e.target.value)){
             mostrarAlerta('El email no és válido', e.target.parentElement);
